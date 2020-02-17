@@ -14,7 +14,7 @@ Build the project to download missing nuget packages such as Swagger and EF Core
 To successfully run the application the database has to be created.\
 Change the default connection string in the appsettings.Development.json file to local system database connection string\
 Run update-database command using the Visual Studio Package Manager Console to run the migration scripts to selected MSSQL database\
-Running the app will load the Swagger UI API Documentation.\
+Running the app will load the Swagger UI API Documentation.
 
 #Improvements
 API - Add global error filter to log and handle exceptions caught and return friendly message to client.\
