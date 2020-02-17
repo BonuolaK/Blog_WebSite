@@ -1,7 +1,7 @@
 # Blog_WebSite 
 
 # Angular Project
-The NwareBlog-Angular folder contains the front end SPA
+The NwareBlog-Angular folder contains the front end SPA\
 Please run npm install and build to install dependent libaries
 
 #Improvements
