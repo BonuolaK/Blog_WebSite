@@ -44,6 +44,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "NwareBlog_Ang", "NwareBlog_
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "30737"
+		SlnRelativePath = "NwareBlog_Ang\"
 	EndProjectSection
 EndProject
 Global
