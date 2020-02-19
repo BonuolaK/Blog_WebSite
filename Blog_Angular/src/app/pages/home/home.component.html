@@ -1,0 +1,32 @@
+<div class="container" style="margin-top: 70px;">
+
+  <div class="card">
+    <div class="card-header">
+      Categories
+      <a class="btn btn-success float-right" [routerLink]="['/category']">Add</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item" *ngFor="let category of categories">
+        <a [routerLink]="['/category/',category.id]">{{category.name}}</a>
+        <button class="btn btn-sm btn-primary ml-3" (click)="filterPosts(category.id,category.name)">View Posts</button>
+      </li>
+
+    </ul>
+  </div>
+
+
+  <div class="card mt-4">
+    <div class="card-header">
+      Posts <div style="display:inline" *ngIf="hasFilter"><span> - Showing <span class="text-success">{{selectedCategory}}</span> Posts </span><button (click)="clearFilters()">Clear filter</button></div>
+      <a [routerLink]="['/post']" class="btn btn-success float-right">Add</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item" *ngFor="let post of posts">
+        <a [routerLink]="['/post/',post.id]">{{post.title}}</a>
+      </li>
+
+    </ul>
+  </div>
+
+
+</div>
